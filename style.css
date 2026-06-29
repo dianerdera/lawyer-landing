@@ -1,4 +1,4 @@
-```css
+
 /*==================================================
     GLASS EDITORIAL WEBSITE
     PART 1
@@ -311,7 +311,7 @@ line-height:1.9;
 
 max-width:520px;
 
-color:rgb(30, 30, 99));
+color:rgb(30, 30, 99);
 
 margin-bottom:40px;
 
@@ -560,7 +560,7 @@ box-shadow:
 
 }
 
-```css
+
 /*=========================================
 STATISTICS
 =========================================*/
@@ -578,6 +578,7 @@ STATISTICS
 
     display:flex;
     justify-content: center;
+    align-items:center;
     gap:25px;
     flex-direction: row;
 
@@ -610,9 +611,9 @@ STATISTICS
     height: 220px;
     flex-shrink: 0;
     display: flex;
-    flex-direction: row !important;
+    flex-direction: column !important;
     justify-content:center;
-    align-items:horizontal;
+    align-items:center;
     text-align:center;
 
 
@@ -1210,9 +1211,7 @@ margin-top:80px;
 }
 
 .stats{
-
-grid-template-columns:repeat(2,1fr);
-
+flex-wrap:wrap;
 }
 
 .photo-wall{
@@ -1260,9 +1259,7 @@ font-size:64px;
 }
 
 .stats{
-
-grid-template-columns:1fr;
-
+flex-direction:column;
 }
 
 .section-title h2{
